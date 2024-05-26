@@ -11,7 +11,7 @@ import 'package:sixam_mart_delivery/view/base/custom_image.dart';
 class OrderItemWidget extends StatelessWidget {
   final OrderModel order;
   final OrderDetailsModel orderDetails;
-  const OrderItemWidget({Key? key, required this.order, required this.orderDetails}) : super(key: key);
+  const OrderItemWidget({super.key, required this.order, required this.orderDetails}) ;
   
   @override
   Widget build(BuildContext context) {

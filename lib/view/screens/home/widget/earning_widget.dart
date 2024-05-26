@@ -7,7 +7,7 @@ import 'package:shimmer_animation/shimmer_animation.dart';
 class EarningWidget extends StatelessWidget {
   final String title;
   final double? amount;
-  const EarningWidget({Key? key, required this.title, required this.amount}) : super(key: key);
+  const EarningWidget({super.key, required this.title, required this.amount}) ;
 
   @override
   Widget build(BuildContext context) {

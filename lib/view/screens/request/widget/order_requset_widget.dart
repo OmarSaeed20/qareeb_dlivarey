@@ -21,7 +21,7 @@ class OrderRequestWidget extends StatelessWidget {
   final int index;
   final bool fromDetailsPage;
   final Function onTap;
-  const OrderRequestWidget({Key? key, required this.orderModel, required this.index, required this.onTap, this.fromDetailsPage = false}) : super(key: key);
+  const OrderRequestWidget({super.key, required this.orderModel, required this.index, required this.onTap, this.fromDetailsPage = false}) ;
 
   @override
   Widget build(BuildContext context) {

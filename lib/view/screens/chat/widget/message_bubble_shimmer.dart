@@ -6,7 +6,7 @@ import 'package:sixam_mart_delivery/controller/chat_controller.dart';
 
 class MessageBubbleShimmer extends StatelessWidget {
   final bool isMe;
-  const MessageBubbleShimmer({Key? key, required this.isMe}) : super(key: key);
+  const MessageBubbleShimmer({super.key, required this.isMe}) ;
 
   @override
   Widget build(BuildContext context) {

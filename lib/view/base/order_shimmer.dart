@@ -6,7 +6,7 @@ import 'package:shimmer_animation/shimmer_animation.dart';
 
 class OrderShimmer extends StatelessWidget {
   final bool isEnabled;
-  const OrderShimmer({Key? key, required this.isEnabled}) : super(key: key);
+  const OrderShimmer({super.key, required this.isEnabled}) ;
 
   @override
   Widget build(BuildContext context) {

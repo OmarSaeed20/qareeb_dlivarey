@@ -17,7 +17,7 @@ import 'package:sixam_mart_delivery/view/base/custom_snackbar.dart';
 import 'package:sixam_mart_delivery/view/base/custom_text_field.dart';
 
 class DeliveryManRegistrationScreen extends StatefulWidget {
-  const DeliveryManRegistrationScreen({Key? key}) : super(key: key);
+  const DeliveryManRegistrationScreen({super.key}) ;
 
   @override
   State<DeliveryManRegistrationScreen> createState() => _DeliveryManRegistrationScreenState();

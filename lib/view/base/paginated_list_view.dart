@@ -12,9 +12,9 @@ class PaginatedListView extends StatefulWidget {
   final Widget productView;
   final bool enabledPagination;
   const PaginatedListView({
-    Key? key, required this.scrollController, required this.onPaginate, required this.totalSize,
+    super.key, required this.scrollController, required this.onPaginate, required this.totalSize,
     required this.offset, required this.productView, this.enabledPagination = true,
-  }) : super(key: key);
+  }) ;
 
   @override
   State<PaginatedListView> createState() => _PaginatedListViewState();

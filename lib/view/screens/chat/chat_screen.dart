@@ -23,7 +23,7 @@ class ChatScreen extends StatefulWidget {
   final User? user;
   final int? conversationId;
   final bool fromNotification;
-  const ChatScreen({Key? key, required this.notificationBody, required this.user, this.conversationId, this.fromNotification = false}) : super(key: key);
+  const ChatScreen({super.key, required this.notificationBody, required this.user, this.conversationId, this.fromNotification = false}) ;
 
   @override
   State<ChatScreen> createState() => _ChatScreenState();
@@ -52,6 +52,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }else {
         baseUrl = Get.find<SplashController>().configModel!.baseUrls!.storeImageUrl;
       }
+      // ignore: deprecated_member_use
       return WillPopScope(
         onWillPop: () async{
           if(widget.fromNotification) {
@@ -107,8 +108,8 @@ class _ChatScreenState extends State<ChatScreen> {
                     reverse: true,
                     child: PaginatedListView(
                       scrollController: _scrollController,
-                      totalSize: chatController.messageModel != null ? chatController.messageModel!.totalSize : null,
-                      offset: chatController.messageModel != null ? chatController.messageModel!.offset : null,
+                      totalSize: chatController.messageModel?.totalSize,
+                      offset: chatController.messageModel?.offset,
                       onPaginate: (int? offset) async => await chatController.getMessages(
                         offset!, widget.notificationBody!, widget.user, widget.conversationId,
                       ),

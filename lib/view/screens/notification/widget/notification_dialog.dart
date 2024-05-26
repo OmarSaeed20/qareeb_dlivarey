@@ -8,7 +8,7 @@ import 'package:sixam_mart_delivery/view/base/custom_image.dart';
 
 class NotificationDialog extends StatelessWidget {
   final NotificationModel notificationModel;
-  const NotificationDialog({Key? key, required this.notificationModel}) : super(key: key);
+  const NotificationDialog({super.key, required this.notificationModel}) ;
 
   @override
   Widget build(BuildContext context) {

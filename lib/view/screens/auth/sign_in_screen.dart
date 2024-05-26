@@ -19,7 +19,7 @@ class SignInScreen extends StatelessWidget {
   final TextEditingController _phoneController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-  SignInScreen({Key? key}) : super(key: key);
+  SignInScreen({super.key}) ;
 
   @override
   Widget build(BuildContext context) {

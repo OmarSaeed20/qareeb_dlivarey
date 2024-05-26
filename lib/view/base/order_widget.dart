@@ -14,7 +14,7 @@ class OrderWidget extends StatelessWidget {
   final OrderModel orderModel;
   final bool isRunningOrder;
   final int orderIndex;
-  const OrderWidget({Key? key, required this.orderModel, required this.isRunningOrder, required this.orderIndex}) : super(key: key);
+  const OrderWidget({super.key, required this.orderModel, required this.isRunningOrder, required this.orderIndex}) ;
 
   @override
   Widget build(BuildContext context) {

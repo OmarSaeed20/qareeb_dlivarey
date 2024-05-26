@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 class ProfileCard extends StatelessWidget {
   final String title;
   final String data;
-  const ProfileCard({Key? key, required this.data, required this.title}) : super(key: key);
+  const ProfileCard({super.key, required this.data, required this.title}) ;
 
   @override
   Widget build(BuildContext context) {

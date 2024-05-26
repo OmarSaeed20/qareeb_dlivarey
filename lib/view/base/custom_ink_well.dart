@@ -4,7 +4,7 @@ class CustomInkWell extends StatelessWidget {
   final Widget child;
   final VoidCallback onTap;
   final Color? highlightColor;
-  const CustomInkWell({Key? key, this.radius,required this.child,required this.onTap, this.highlightColor}) : super(key: key);
+  const CustomInkWell({super.key, this.radius,required this.child,required this.onTap, this.highlightColor}) ;
 
   @override
   Widget build(BuildContext context) {

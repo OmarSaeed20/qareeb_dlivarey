@@ -23,7 +23,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key}) ;
 
 
   Future<void> _loadData() async {
@@ -178,17 +178,17 @@ class HomeScreen extends StatelessWidget {
                     Row(children: [
                       EarningWidget(
                         title: 'today'.tr,
-                        amount: authController.profileModel != null ? authController.profileModel!.todaysEarning : null,
+                        amount: authController.profileModel?.todaysEarning,
                       ),
                       Container(height: 30, width: 1, color: Theme.of(context).cardColor),
                       EarningWidget(
                         title: 'this_week'.tr,
-                        amount: authController.profileModel != null ? authController.profileModel!.thisWeekEarning : null,
+                        amount: authController.profileModel?.thisWeekEarning,
                       ),
                       Container(height: 30, width: 1, color: Theme.of(context).cardColor),
                       EarningWidget(
                         title: 'this_month'.tr,
-                        amount: authController.profileModel != null ? authController.profileModel!.thisMonthEarning : null,
+                        amount: authController.profileModel?.thisMonthEarning,
                       ),
                     ]),
                   ]),
@@ -201,18 +201,18 @@ class HomeScreen extends StatelessWidget {
               Row(children: [
                 Expanded(child: CountCard(
                   title: 'todays_orders'.tr, backgroundColor: Theme.of(context).secondaryHeaderColor, height: 180,
-                  value: authController.profileModel != null ? authController.profileModel!.todaysOrderCount.toString() : null,
+                  value: authController.profileModel?.todaysOrderCount.toString(),
                 )),
                 const SizedBox(width: Dimensions.paddingSizeSmall),
                 Expanded(child: CountCard(
                   title: 'this_week_orders'.tr, backgroundColor: Theme.of(context).colorScheme.error, height: 180,
-                  value: authController.profileModel != null ? authController.profileModel!.thisWeekOrderCount.toString() : null,
+                  value: authController.profileModel?.thisWeekOrderCount.toString(),
                 )),
               ]),
               const SizedBox(height: Dimensions.paddingSizeSmall),
               CountCard(
                 title: 'total_orders'.tr, backgroundColor: Theme.of(context).primaryColor, height: 140,
-                value: authController.profileModel != null ? authController.profileModel!.orderCount.toString() : null,
+                value: authController.profileModel?.orderCount.toString(),
               ),
               const SizedBox(height: Dimensions.paddingSizeSmall),
               CountCard(

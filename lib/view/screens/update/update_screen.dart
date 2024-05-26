@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 class UpdateScreen extends StatelessWidget {
   final bool isUpdate;
-  const UpdateScreen({Key? key, required this.isUpdate}) : super(key: key);
+  const UpdateScreen({super.key, required this.isUpdate}) ;
 
   @override
   Widget build(BuildContext context) {

@@ -9,7 +9,7 @@ import 'package:get/get.dart';
 
 class OrderFeeReceiveDialog extends StatelessWidget {
   final double totalAmount;
-  const OrderFeeReceiveDialog({Key? key, required this.totalAmount}) : super(key: key);
+  const OrderFeeReceiveDialog({super.key, required this.totalAmount}) ;
 
   @override
   Widget build(BuildContext context) {

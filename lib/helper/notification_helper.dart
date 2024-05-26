@@ -29,7 +29,7 @@ class NotificationHelper {
     flutterLocalNotificationsPlugin
         .resolvePlatformSpecificImplementation<
             AndroidFlutterLocalNotificationsPlugin>()
-        ?.requestPermission();
+        ?.requestNotificationsPermission();
     flutterLocalNotificationsPlugin.initialize(initializationsSettings,
         onDidReceiveNotificationResponse: (NotificationResponse load) async {
       try {
@@ -124,8 +124,7 @@ class NotificationHelper {
       }
       try {
         if (/*message.data != null || */ message.data.isNotEmpty) {
-          NotificationBody notificationBody =
-              convertNotification(message.data)!;
+          NotificationBody notificationBody = convertNotification(message.data);
 
           if (notificationBody.notificationType == NotificationType.order) {
             Get.toNamed(RouteHelper.getOrderDetailsRoute(
@@ -315,9 +314,7 @@ Future<dynamic> myBackgroundMessageHandler(RemoteMessage message) async {
   // show native call dialog if notification type is order
   final data = message.data;
   if (data['type'] == 'updated' || data['type'] == 'New order placed') {
-    CallHelper.makeFakeCall(
-      title: message.data['title'],
-    );
+    CallHelper.makeFakeCall(title: message.data['title']);
   }
   // var androidInitialize = new AndroidInitializationSettings('notification_icon');
   // var iOSInitialize = new IOSInitializationSettings();

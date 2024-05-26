@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class RunningOrderScreen extends StatelessWidget {
-  const RunningOrderScreen({Key? key}) : super(key: key);
+  const RunningOrderScreen({super.key}) ;
 
   @override
   Widget build(BuildContext context) {

@@ -8,7 +8,7 @@ class CountCard extends StatelessWidget {
   final String title;
   final String? value;
   final double height;
-  const CountCard({Key? key, required this.backgroundColor, required this.title, required this.value, required this.height}) : super(key: key);
+  const CountCard({super.key, required this.backgroundColor, required this.title, required this.value, required this.height}) ;
 
   @override
   Widget build(BuildContext context) {

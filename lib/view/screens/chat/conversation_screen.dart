@@ -16,7 +16,7 @@ import 'package:sixam_mart_delivery/view/base/custom_snackbar.dart';
 import 'package:sixam_mart_delivery/view/base/paginated_list_view.dart';
 import 'package:sixam_mart_delivery/view/screens/chat/widget/search_field.dart';
 class ConversationScreen extends StatefulWidget {
-  const ConversationScreen({Key? key}) : super(key: key);
+  const ConversationScreen({super.key}) ;
 
   @override
   State<ConversationScreen> createState() => _ConversationScreenState();

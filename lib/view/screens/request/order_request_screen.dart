@@ -10,7 +10,7 @@ import 'package:get/get.dart';
 
 class OrderRequestScreen extends StatefulWidget {
   final Function onTap;
-  const OrderRequestScreen({Key? key, required this.onTap}) : super(key: key);
+  const OrderRequestScreen({super.key, required this.onTap}) ;
 
   @override
   OrderRequestScreenState createState() => OrderRequestScreenState();

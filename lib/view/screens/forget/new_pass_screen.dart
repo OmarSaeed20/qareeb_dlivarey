@@ -15,7 +15,7 @@ class NewPassScreen extends StatefulWidget {
   final String? resetToken;
   final String? number;
   final bool fromPasswordChange;
-  const NewPassScreen({Key? key, required this.resetToken, required this.number, required this.fromPasswordChange}) : super(key: key);
+  const NewPassScreen({super.key, required this.resetToken, required this.number, required this.fromPasswordChange}) ;
 
   @override
   State<NewPassScreen> createState() => _NewPassScreenState();

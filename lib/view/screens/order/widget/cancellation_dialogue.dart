@@ -11,7 +11,7 @@ import 'package:sixam_mart_delivery/view/base/custom_snackbar.dart';
 
 class CancellationDialogue extends StatelessWidget {
   final int? orderId;
-  const CancellationDialogue({Key? key, required this.orderId}) : super(key: key);
+  const CancellationDialogue({super.key, required this.orderId}) ;
 
   @override
   Widget build(BuildContext context) {

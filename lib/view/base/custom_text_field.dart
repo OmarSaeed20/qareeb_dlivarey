@@ -21,7 +21,7 @@ class CustomTextField extends StatefulWidget {
   final bool showTitle;
 
   const CustomTextField(
-      {Key? key, this.hintText = 'Write something...',
+      {super.key, this.hintText = 'Write something...',
       this.controller,
       this.focusNode,
       this.nextFocus,
@@ -36,7 +36,7 @@ class CustomTextField extends StatefulWidget {
       this.isPassword = false,
       this.divider = false,
       this.showTitle = false,
-      }) : super(key: key);
+      }) ;
 
   @override
   CustomTextFieldState createState() => CustomTextFieldState();

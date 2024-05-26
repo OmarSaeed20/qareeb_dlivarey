@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:sixam_mart_delivery/controller/auth_controller.dart';
 import 'package:sixam_mart_delivery/controller/splash_controller.dart';
@@ -18,7 +17,7 @@ import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key}) ;
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();

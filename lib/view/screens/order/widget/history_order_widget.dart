@@ -13,7 +13,7 @@ class HistoryOrderWidget extends StatelessWidget {
   final OrderModel orderModel;
   final bool isRunning;
   final int index;
-  const HistoryOrderWidget({Key? key, required this.orderModel, required this.isRunning, required this.index}) : super(key: key);
+  const HistoryOrderWidget({super.key, required this.orderModel, required this.isRunning, required this.index}) ;
 
   @override
   Widget build(BuildContext context) {

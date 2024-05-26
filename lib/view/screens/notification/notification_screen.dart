@@ -12,7 +12,7 @@ import 'package:get/get.dart';
 
 class NotificationScreen extends StatefulWidget {
   final bool fromNotification;
-  const NotificationScreen({Key? key, this.fromNotification = false}) : super(key: key);
+  const NotificationScreen({super.key, this.fromNotification = false}) ;
 
   @override
   State<NotificationScreen> createState() => _NotificationScreenState();

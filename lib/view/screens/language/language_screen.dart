@@ -11,7 +11,7 @@ import 'package:sixam_mart_delivery/view/base/custom_snackbar.dart';
 import 'package:get/get.dart';
 
 class ChooseLanguageScreen extends StatelessWidget {
-  const ChooseLanguageScreen({Key? key}) : super(key: key);
+  const ChooseLanguageScreen({super.key}) ;
 
   @override
   Widget build(BuildContext context) {

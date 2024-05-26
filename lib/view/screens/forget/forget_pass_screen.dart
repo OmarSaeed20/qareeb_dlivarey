@@ -14,7 +14,7 @@ import 'package:get/get.dart';
 import 'package:phone_number/phone_number.dart';
 
 class ForgetPassScreen extends StatefulWidget {
-  const ForgetPassScreen({Key? key}) : super(key: key);
+  const ForgetPassScreen({super.key}) ;
 
   @override
   State<ForgetPassScreen> createState() => _ForgetPassScreenState();

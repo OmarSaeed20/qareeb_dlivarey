@@ -4,7 +4,6 @@ import 'dart:typed_data';
 
 import 'package:sixam_mart_delivery/data/model/response/error_response.dart';
 import 'package:sixam_mart_delivery/util/app_constants.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';

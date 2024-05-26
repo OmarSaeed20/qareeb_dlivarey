@@ -21,7 +21,7 @@ class MyTextField extends StatefulWidget {
   final Color? fillColor;
 
   const MyTextField(
-      {Key? key, this.hintText = '',
+      {super.key, this.hintText = '',
         this.controller,
         this.focusNode,
         this.nextFocus,
@@ -34,7 +34,7 @@ class MyTextField extends StatefulWidget {
         this.capitalization = TextCapitalization.none,
         this.onTap,
         this.fillColor,
-        this.isPassword = false}) : super(key: key);
+        this.isPassword = false}) ;
 
   @override
   MyTextFieldState createState() => MyTextFieldState();

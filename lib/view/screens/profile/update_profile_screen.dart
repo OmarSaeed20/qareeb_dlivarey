@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class UpdateProfileScreen extends StatefulWidget {
-  const UpdateProfileScreen({Key? key}) : super(key: key);
+  const UpdateProfileScreen({super.key}) ;
 
   @override
   State<UpdateProfileScreen> createState() => _UpdateProfileScreenState();

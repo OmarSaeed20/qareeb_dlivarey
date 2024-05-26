@@ -18,7 +18,7 @@ class VerifyDeliverySheet extends StatelessWidget {
   final double? orderAmount;
   final bool isSenderPay;
   final bool? isParcel;
-  const VerifyDeliverySheet({Key? key, required this.currentOrderModel, required this.verify, required this.orderAmount, required this.cod, this.isSenderPay = false, this.isParcel = false}) : super(key: key);
+  const VerifyDeliverySheet({super.key, required this.currentOrderModel, required this.verify, required this.orderAmount, required this.cod, this.isSenderPay = false, this.isParcel = false}) ;
 
   @override
   Widget build(BuildContext context) {

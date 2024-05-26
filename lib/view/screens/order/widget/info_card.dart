@@ -18,8 +18,8 @@ class InfoCard extends StatelessWidget {
   final bool showButton;
   final bool isStore;
   final Function? messageOnTap;
-  const InfoCard({Key? key, required this.title, required this.image, required this.name, required this.address, required this.phone,
-    required this.latitude, required this.longitude, required this.showButton, this.messageOnTap, this.isStore = false}) : super(key: key);
+  const InfoCard({super.key, required this.title, required this.image, required this.name, required this.address, required this.phone,
+    required this.latitude, required this.longitude, required this.showButton, this.messageOnTap, this.isStore = false}) ;
 
   @override
   Widget build(BuildContext context) {

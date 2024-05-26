@@ -8,7 +8,7 @@ class ProfileButton extends StatelessWidget {
   final String title;
   final bool? isButtonActive;
   final Function onTap;
-  const ProfileButton({Key? key, required this.icon, required this.title, required this.onTap, this.isButtonActive}) : super(key: key);
+  const ProfileButton({super.key, required this.icon, required this.title, required this.onTap, this.isButtonActive}) ;
 
   @override
   Widget build(BuildContext context) {
